@@ -11,7 +11,7 @@
  Target Server Version : 100138
  File Encoding         : 65001
 
- Date: 28/10/2019 01:54:16
+ Date: 28/10/2019 13:11:46
 */
 
 SET NAMES utf8mb4;
@@ -25,10 +25,10 @@ CREATE TABLE `buku` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `isbn` varchar(50) DEFAULT NULL,
   `title` varchar(150) DEFAULT NULL,
-  `author` double DEFAULT NULL,
+  `author` varchar(150) DEFAULT NULL,
   `stock` double DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 SET FOREIGN_KEY_CHECKS = 1;

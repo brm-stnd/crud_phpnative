@@ -1,11 +1,7 @@
 <?php
+		require_once "config_db.php";
 
-		class model{
-
-				function __construct(){
-						$koneksi = mysql_connect("localhost", "root", "");
-						$db = mysql_select_db("crud_buku");
-				}
+		class model extends config_db{
 
 				function execute($query){
 						return mysql_query($query);

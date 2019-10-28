@@ -1,7 +1,7 @@
 <?php
 
-		include "model/model.php";
-		include "helpers/func_helper.php";
+		require_once "model/model.php";
+		require_once "helpers/func_helper.php";
 
 		class controller{
 
@@ -14,11 +14,11 @@
 				function index(){
 						$book_data = $this->model->selectAll();
 						$content = 'main';
-						include "view/template.php";
+						require_once "view/template.php";
 				}
 
 				function contentAdd(){
-						include "view/add.php";
+						require_once "view/add.php";
 				}
 
 				function insert(){
@@ -36,7 +36,7 @@
 						$id_decr 	= encryptor('decrypt', $id);
 						$data 		= $this->model->selectBook($id_decr);
 						$row 		= $this->model->fetch($data);
-						include "view/update.php";
+						require_once "view/update.php";
 				}
 
 				function update(){

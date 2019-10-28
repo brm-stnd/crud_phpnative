@@ -9,11 +9,11 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="isbn">ISBN</label>
-                    <input type="text" class="form-control" id="isbn" name="isbn">
+                    <input type="text" class="form-control" id="isbn" name="isbn" require>
                 </div>
                 <div class="form-group">
                     <label for="title">Book Title</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" class="form-control" id="title" name="title" require>
                 </div>
                 <div class="form-group">
                     <label for="author">Author</label>
